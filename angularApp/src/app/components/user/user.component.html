@@ -1,0 +1,7 @@
+<p>
+  {{user.id}} - {{user.name}} - {{user.company.name}}
+<!--  <a routerLink="/user-details/{{user.id}}">Details</a>-->
+<!--  <a [routerLink]="['/user-details/', user.id]">Details</a>-->
+<!--  <a routerLink="user-details/{{user.id}}">Details</a>-->
+  <a [routerLink]="['user-details', user.id]">Details</a>
+</p>
