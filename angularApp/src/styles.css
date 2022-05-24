@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+app-menu ul {
+  background-color: black;
+  width: 100vw;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+}
+app-menu ul li {
+  display: grid;
+  place-content: center;
+}
+
+app-menu ul li a.active{
+  color: red;
+}
+
+app-menu ul li a:hover{
+  text-decoration: underline;
+}
+
+app-menu ul li a {
+  color: white;
+}
